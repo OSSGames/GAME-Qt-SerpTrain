@@ -1,0 +1,164 @@
+<level name="three circles" comment="Testlevel Kathrin" layers="1">
+  <layer width="10" height="10">
+    <line>
+        <boardtile type="tunnel" rotation="90" >
+            <tunnelID value="2" />
+            <ballqueue>
+                <ball color="red" />
+                <wait time="45" />
+                <ball color="blue"/>
+                <wait time="17"/>
+                <ball color="green" />
+                <wait time="65" />
+                <ball color="white" />
+                <wait time="1500" />
+                <ball color="yellow" />
+            </ballqueue>
+	</boardtile>
+        <boardtile />
+        <boardtile />
+        <boardtile />
+        <boardtile />
+        <boardtile />        <boardtile />
+        <boardtile type="turn" rotation="180"/>
+        <boardtile type="straight" />
+        <boardtile type="turn" rotation="90"/>
+    </line>
+    
+    <line>
+        <boardtile type="switch" rotation="270" >
+        	<switchState value="turn" />
+        </boardtile>
+       
+        <boardtile type="straight" />        <boardtile type="straight" />        
+        <boardtile type="switch" rotation="180" mirror="yes">
+		<switchState value="turn" />
+	</boardtile>
+		<boardtile type="straight" />        <boardtile type="straight" />
+        <boardtile type="switch" />
+        <boardtile type="switch" />
+        <boardtile type="switch" rotation="180" />
+        <boardtile type="switch" rotation="90" />
+    </line>
+    
+    <line>
+        <boardtile type="straight" rotation="270" />
+        <boardtile />        <boardtile />         
+        <boardtile type="tunnel" rotation="270" >
+		<tunnelID value="3" />
+	</boardtile>
+        <boardtile type="goal" mirror="yes">
+	    	<continue value="no" /> 
+	    	<ballqueue showAll="no" >
+	    		<ball color="white" />
+		    	<ball color="white" />
+		    </ballqueue>
+		</boardtile>        
+        <boardtile type="goal" mirror="yes">
+	    	<continue value="yes" /> 
+	    	<ballqueue showAll="no" >
+	    		<ball color="green" />
+		    	<ball color="red" />
+		    	<ball color="yellow" />
+		    	<ball color="blue" />
+		    </ballqueue>
+		</boardtile>        
+        <boardtile type="goal" mirror="yes">
+	    	<continue value="yes" /> 
+	    	<ballqueue showAll="no" >
+	    		<ball color="green" />
+		    	<ball color="red" />
+		    	<ball color="yellow" />
+		    	<ball color="blue" />
+		    </ballqueue>
+		</boardtile>        
+        <boardtile type="turn" rotation="90" />
+        <boardtile type="straight" rotation="270" />
+        <boardtile type="straight" rotation="270" />
+    </line>
+    <line>
+        <boardtile type="tunnel" rotation="270" ><tunnelID value="5" /> </boardtile>
+        <boardtile />
+        <boardtile />
+        <boardtile type="tunnel" mirror="yes" >      
+	        <tunnelID value="2" />
+	    </boardtile>
+        <boardtile type="straight" />        
+        <boardtile type="tunnel" >
+	        <tunnelID value="1" />
+	    </boardtile>
+        <boardtile />        
+        <boardtile type="turn" rotation="270" />
+        <boardtile type="switch" rotation="90" />
+        <boardtile type="straight" rotation="270" />
+    </line>
+    <line>
+        <boardtile rotation="270" />
+        <boardtile />        <boardtile />        <boardtile />        <boardtile type="none" />        <boardtile />        <boardtile />
+        <boardtile type="none" rotation="270" />
+        <boardtile type="straight" rotation="270" />
+        <boardtile type="straight" rotation="270" />
+    </line>
+
+    <line>
+        <boardtile rotation="270" />
+        <boardtile />        <boardtile />        <boardtile />        <boardtile type="none" />        <boardtile />        <boardtile />
+        <boardtile type="tunnel" rotation="180" >
+		<tunnelID value="3" />
+	</boardtile>
+        <boardtile type="switch" rotation="90" />
+        <boardtile type="straight" rotation="270" />
+    </line>
+
+    <line>
+        <boardtile type="tunnel" rotation="90" ><tunnelID value="5" /> </boardtile>
+        <boardtile />        <boardtile />        <boardtile />        <boardtile type="none" />        <boardtile />        <boardtile />
+        <boardtile type="none" rotation="270" />
+        <boardtile type="straight" rotation="270" />
+        <boardtile type="straight" rotation="270" />
+    </line>
+
+    <line>
+        <boardtile type="switch" mirror="yes" rotation="270" >
+        	<switchState value="turn" />
+        </boardtile>
+        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />
+        <boardtile type="switch" mirror="yes" rotation="180" />
+        <boardtile type="switch" rotation="90" mirror="yes"/>
+        <boardtile type="straight" rotation="90" />
+    </line>
+    
+    <line>
+        <boardtile type="switch" rotation="270" >
+        </boardtile>
+        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />        <boardtile type="straight" />
+        <boardtile type="switch" mirror="yes" rotation="90"/>
+        <boardtile type="turn" mirror="yes" />
+        <boardtile type="switch" mirror="yes" rotation="90" >
+			<switchState value="turn" />
+        </boardtile>
+    </line>
+    <line>
+            <boardtile type="tunnel" rotation="270" >
+            <tunnelID value="1" />
+            <ballqueue>
+                <ball color="red" />
+                <wait time="90" />
+                <ball color="blue"/>
+                <wait time="35"/>
+                <ball color="green" />
+                <wait time="130" />
+                <ball color="white" />
+                <wait time="500" />
+                <ball color="yellow" />
+            </ballqueue>
+	</boardtile>
+        <boardtile />        <boardtile />        <boardtile />        <boardtile type="none" />        <boardtile />        <boardtile />
+        <boardtile type="turn" mirror="yes"/>
+        <boardtile type="straight" rotation="180" mirror="yes"/>
+        <boardtile type="turn" />
+    </line>
+    
+  </layer>
+  
+</level>

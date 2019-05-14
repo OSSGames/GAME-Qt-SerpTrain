@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<level layers="2" name="aa" comment="bb">
+	<layer width="3" height="2">
+		<line>
+			<boardtile type="tunnel" rotation="0" mirror="yes" >
+		 		<tunnelID value="1" />
+				<ballqueue>
+				    <ball color="blue" />
+				</ballqueue>
+			</boardtile>
+			<boardtile type="switch" rotation="180" mirror="yes" />
+			<boardtile type="tunnel" rotation="0" mirror="no" >
+		 		<tunnelID value="3" />
+			</boardtile>
+		</line>
+		<line>
+			<boardtile type="tunnel" rotation="0" mirror="yes" >
+		 		<tunnelID value="2" />
+			</boardtile>
+			<boardtile type="switch" rotation="0" mirror="no" />
+			<boardtile type="tunnel" rotation="0" mirror="no" >
+		 		<tunnelID value="3" />
+			</boardtile>
+		</line>
+	</layer>
+	<layer width="2" height="2" invisible="yes">
+		<line>
+			<boardtile type="tunnel" rotation="0" mirror="yes" >
+		 		<tunnelID value="2" />
+				<ballqueue>
+				    <ball color="red" />
+				</ballqueue>
+			</boardtile>
+			<boardtile type="turn" rotation="90" mirror="no" />
+		</line>
+		<line>
+			<boardtile type="tunnel" rotation="0" mirror="yes" >
+		 		<tunnelID value="1" />
+			</boardtile>
+			<boardtile type="turn" rotation="0" mirror="no" />
+		</line>
+	</layer>
+</level>

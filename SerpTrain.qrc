@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/icons" >
+        <file alias="0Stars.png" >icons/0Stars.png</file>
+        <file alias="1Stars.png" >icons/1Stars.png</file>
+        <file alias="2Stars.png" >icons/2Stars.png</file>
+        <file alias="3Stars.png" >icons/3Stars.png</file>
+        <file alias="check.png" >icons/check.png</file>
+        <file alias="doubleTurn.png" >icons/doubleTurn.png</file>
+        <file alias="goal.png" >icons/goal.png</file>
+        <file alias="none.png" >icons/none.png</file>
+        <file alias="straight.png" >icons/straight.png</file>
+        <file alias="switch.png" >icons/switch.png</file>
+        <file alias="switchColored.png" >icons/switchColored.png</file>
+        <file alias="switchCursor.png" >icons/switchCursor.png</file>
+        <file alias="switchTurn.png" >icons/switchTurn.png</file>
+        <file alias="tunnel.png" >icons/tunnel.png</file>
+        <file alias="turn.png" >icons/turn.png</file>
+    </qresource>
+    <qresource prefix="/levels" >
+        <file alias="emptyLayer.xml" >levels/emptyLayer.xml</file>
+        <file alias="emptyLevel.xml" >levels/emptyLevel.xml</file>
+        <file alias="tut1.xml" >levels/tut1.xml</file>
+        <file alias="tut2.xml" >levels/tut2.xml</file>
+        <file alias="tut3.xml" >levels/tut3.xml</file>
+        <file alias="tut4.xml" >levels/tut4.xml</file>
+    </qresource>
+</RCC>

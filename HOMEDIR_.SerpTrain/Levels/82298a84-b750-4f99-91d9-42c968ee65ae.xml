@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<level buildNumber="1322" layers="1" contact="http://serpedon.de" difficulty="3" author="Michael &quot;Serpedon&quot; Walz" comment="" uuid="82298a84-b750-4f99-91d9-42c968ee65ae" name="Drive Through II" formatNo="4" versionNo="2" >
+ <layer width="8" height="5" >
+  <line>
+   <boardtile rotation="0" type="tunnel" mirror="yes" >
+    <tunnelID value="-1" />
+    <ballqueue>
+     <ball color="red" />
+     <wait time="40" />
+     <ball color="yellow" />
+     <wait time="40" />
+     <ball color="red" />
+     <wait time="40" />
+     <ball color="yellow" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="90" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="goal" mirror="no" >
+    <continue value="no" />
+    <ballqueue showAll="no" >
+     <ball color="green" />
+     <ball color="blue" />
+     <ball color="green" />
+     <ball color="yellow" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="0" type="turn" mirror="yes" />
+   <boardtile rotation="180" type="goal" mirror="no" >
+    <continue value="yes" />
+    <ballqueue showAll="no" >
+     <ball color="red" />
+     <ball color="yellow" />
+     <ball color="red" />
+     <ball color="blue" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="yes" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="yes" />
+  </line>
+  <line>
+   <boardtile rotation="0" type="turn" mirror="yes" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+   <boardtile rotation="0" type="tunnel" mirror="yes" >
+    <tunnelID value="-2" />
+    <ballqueue>
+     <ball color="green" />
+     <wait time="40" />
+     <ball color="blue" />
+     <wait time="40" />
+     <ball color="green" />
+     <wait time="40" />
+     <ball color="blue" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+  </line>
+ </layer>
+</level>

@@ -1,0 +1,10 @@
+Diese Datei beschreibt, wo welche Informationen über QSettings gespeichert werden!
+
+ORT											TYP			BESCHREIBUNG
+LevelStatistics/{$UUID}/wins				int			Anzahl der Siege eines Levels
+LevelStatistics/{$UUID}/tries				int			Anzahl der Versuche eines Levels
+LevelStatistics/{$UUID}/lastTriedVersion	int			VersionsNummer der zuletzt gestarteten Version des Levels
+
+Config/{$VARNAME}_isDefault					bool		Speichert, ob die Variable noch den Standardwert besitzt
+Config/{$VARNAME}							<generic>	Falls die Variable nicht mehr den Standardwert besitzt, steht hier der richtige drin!
+

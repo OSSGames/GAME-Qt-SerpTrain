@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="net.sourceforge.phpeclipse.externaltools.ProgramBuilderLaunchConfigurationType">
+<stringAttribute key="net.sourceforge.phpeclipse.externaltools.ATTR_TOOL_ARGUMENTS" value="pre"/>
+<booleanAttribute key="editedByExternalToolsMainTab" value="true"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_RUN_BUILD_KINDS" value="full,incremental,"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<stringAttribute key="net.sourceforge.phpeclipse.externaltools.ATTR_LOCATION" value="${workspace_loc:/SerpTrain/buildNumbers.pl}"/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_TRIGGERS_CONFIGURED" value="true"/>
+<stringAttribute key="net.sourceforge.phpeclipse.externaltools.ATTR_WORKING_DIRECTORY" value="${resource_loc:/SerpTrain}"/>
+<booleanAttribute key="org.eclipse.ui.externaltools.ATTR_BUILDER_ENABLED" value="true"/>
+</launchConfiguration>

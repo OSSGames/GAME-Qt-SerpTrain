@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- <levels>
+    Optionale Attribute:
+	formatNo: Integer, die die aktuelle Formatnummer angibt. Wird ein diese Datei zum updaten geladen und trägt eine größere Formatnummer (als das Programm), so wird eine Warnung ausgegeben; default="0";
+		Diese Datei beschreibt das Format für formatNo=0
+-->
+<levels>
+	<level uuid="fae4d9cb-96c2-4f27-9f99-154307991feb" filename="http://serpedon.de/SerpTrain/levels/fae4d9cb-96c2-4f27-9f99-154307991feb.xml" versionNo="1" />
+	<level uuid="ef942352-9f5d-407e-ab45-04228b0646b0" filename="http://serpedon.de/SerpTrain/levels/ef942352-9f5d-407e-ab45-04228b0646b0.xml" versionNo="69" />
+	.
+	.
+	.
+</levels>

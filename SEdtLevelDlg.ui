@@ -1,0 +1,210 @@
+<ui version="4.0" >
+ <class>SEdtLevelDlgClass</class>
+ <widget class="QDialog" name="SEdtLevelDlgClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>482</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Level Properties</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <layout class="QFormLayout" name="formLayout_2" >
+     <property name="fieldGrowthPolicy" >
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <item row="0" column="0" >
+      <widget class="QLabel" name="label" >
+       <property name="text" >
+        <string>Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QLineEdit" name="name" />
+     </item>
+     <item row="1" column="0" >
+      <widget class="QLabel" name="label_2" >
+       <property name="text" >
+        <string>Description:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QTextEdit" name="desc" />
+     </item>
+     <item row="2" column="0" >
+      <widget class="QLabel" name="label_3" >
+       <property name="text" >
+        <string>Layers:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" >
+      <widget class="QLineEdit" name="layers" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" >
+      <widget class="QLabel" name="label_6" >
+       <property name="text" >
+        <string>Author:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1" >
+      <widget class="QLineEdit" name="author" />
+     </item>
+     <item row="4" column="0" >
+      <widget class="QLabel" name="label_7" >
+       <property name="text" >
+        <string>Contact Information:
+(homepage, email, similar)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" >
+      <widget class="QLineEdit" name="contact" />
+     </item>
+     <item row="5" column="0" >
+      <widget class="QLabel" name="label_8" >
+       <property name="text" >
+        <string>Difficulty:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" >
+      <widget class="QComboBox" name="difficulty" >
+       <property name="editable" >
+        <bool>false</bool>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>48</width>
+         <height>14</height>
+        </size>
+       </property>
+       <item>
+        <property name="text" >
+         <string>undefined</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="SerpTrain.qrc" >
+          <normaloff>:/icons/0Stars.png</normaloff>:/icons/0Stars.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>easy</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="SerpTrain.qrc" >
+          <normaloff>:/icons/1Stars.png</normaloff>:/icons/1Stars.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>medium</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="SerpTrain.qrc" >
+          <normaloff>:/icons/2Stars.png</normaloff>:/icons/2Stars.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>difficult</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="SerpTrain.qrc" >
+          <normaloff>:/icons/3Stars.png</normaloff>:/icons/3Stars.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="6" column="0" >
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>Version:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1" >
+      <widget class="QLineEdit" name="version" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" >
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
+        <string>UUID:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1" >
+      <layout class="QHBoxLayout" name="horizontalLayout_2" >
+       <item>
+        <widget class="QLineEdit" name="uuid" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="genUuidButton" >
+         <property name="text" >
+          <string>&amp;Generate New UUID</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QPushButton" name="cancelButton" >
+       <property name="text" >
+        <string>&amp;Cancel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton" >
+       <property name="text" >
+        <string>&amp;Save Settings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <tabstops>
+  <tabstop>name</tabstop>
+  <tabstop>desc</tabstop>
+  <tabstop>layers</tabstop>
+  <tabstop>author</tabstop>
+  <tabstop>contact</tabstop>
+  <tabstop>version</tabstop>
+  <tabstop>uuid</tabstop>
+  <tabstop>genUuidButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+  <tabstop>saveButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="SerpTrain.qrc" />
+ </resources>
+ <connections/>
+</ui>

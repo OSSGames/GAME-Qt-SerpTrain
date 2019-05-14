@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<level buildNumber="1322" layers="1" contact="" difficulty="1" author="Kathrin Ender" comment="" uuid="07c440c9-5b37-4c22-818b-2ca079e86371" name="To each his own" formatNo="4" versionNo="21" >
+ <layer width="8" height="6" >
+  <line>
+   <boardtile rotation="90" type="tunnel" mirror="no" >
+    <tunnelID value="-1" />
+    <ballqueue>
+     <ball color="red" />
+     <wait time="118" />
+     <ball color="blue" />
+     <wait time="118" />
+     <ball color="green" />
+     <wait time="118" />
+     <ball color="red" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="180" colorTop="red" type="turn" mirror="no" />
+   <boardtile rotation="0" colorRight="red" type="straight" mirror="no" />
+   <boardtile rotation="90" colorTop="red" type="turn" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="180" colorRight="green" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="90" type="turn" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="270" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" colorTop="red" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" colorTop="red" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="switchTurn" mirror="no" >
+    <switchState value="turn2" />
+   </boardtile>
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+   <boardtile rotation="90" type="straight" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="90" type="straight" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" colorTop="blue" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="180" colorTop="green" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="switchTurn" mirror="no" >
+    <switchState value="turn1" />
+   </boardtile>
+  </line>
+  <line>
+   <boardtile rotation="270" type="turn" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="doubleTurn" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="straight" mirror="no" />
+   <boardtile rotation="0" colorTop="green" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="180" colorTop="green" type="turn" mirror="no" />
+   <boardtile rotation="0" colorTop="green" colorRight="green" type="doubleTurn" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="straight" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="straight" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="straight" mirror="no" />
+   <boardtile rotation="0" colorRight="green" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="goal" mirror="no" >
+    <continue value="no" />
+    <ballqueue showAll="no" >
+     <ball color="red" />
+     <ball color="green" />
+     <ball color="blue" />
+     <ball color="red" />
+    </ballqueue>
+   </boardtile>
+  </line>
+  <line>
+   <boardtile rotation="270" colorTop="green" type="turn" mirror="no" />
+   <boardtile rotation="0" colorTop="green" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+ </layer>
+</level>

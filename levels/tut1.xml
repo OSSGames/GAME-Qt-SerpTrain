@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<level buildNumber="755" layers="1" comment="&lt;table&gt;&lt;tr&gt;&lt;td&gt;The aim of this game is to guide the colored balls coming out of the tunnel savely through the railroad network to the goal. Each goal consists of four holding tracks. The holding tracks have to be filled one after another with balls of the right color. As soon as the first holding track is filled the color of the second one will appear.&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;img src=':/icons/goal.png'&gt;&lt;br&gt;&lt;i&gt;goal&lt;/i&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;You can influence the balls' ways by changing the directions of the switches by clicking on them.&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;img src=':/icons/switchCursor.png'&gt;&lt;br&gt;&lt;i&gt;switch&lt;/i&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+Go ahead and try!! The puzzle is solved when all holding tracks are filled." name="Tutorial 1" >
+ <layer width="4" height="2" >
+  <line>
+   <boardtile rotation="0" type="tunnel" mirror="yes" >
+    <tunnelID value="-1" />
+    <ballqueue>
+    <ball color="red" />
+    <wait time="60"/>
+    <ball color="blue" />
+    <wait time="50"/>
+    <ball color="green" />
+    <wait time="120"/>
+    <ball color="yellow" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="90" type="turn" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="180" type="goal" mirror="no" >
+    <continue value="no" />
+    <ballqueue showAll="no" >
+    <ball color="blue" />
+    <ball color="red" />
+    <ball color="yellow" />
+    <ball color="green" />
+    </ballqueue >
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+  </line>
+ </layer>
+</level>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!-- <level>
+    Optionale Attribute: name und comment (Nicht angegeben heißt leer)
+      name wird als Title des Fenster genommen, während comment eine Art Levelbeschreibung ist, die vor Levelbeginn angezeigt wird!
+      Diese Texte dürfen gerne HTML-Tags beeinhalten so wie <i>...</i> oder sogar Bilder über <img src=".."/>
+    layers: Gibt an, wie viele Schichten der Level hat: (default: "1") Für jede Schicht muss dann ein <layer> Element auftauchen!
+    buildNumber: Integer, der angibt, mit welcher BuildNummer der Level gespeichert wird;
+    	Wird ein Level von Hand erzeugt, kann dieser Wert einfach weggelassen werden; default ist "-1", was für "von Hand" steht
+    author: Gibt den Autor des Levels an (default: "")
+    contact: Gibt Kontaktinformationen des Autors an (default: "")
+    uuid: Eine UUID, die den Level eindeutig beschreibt; Diese UUID wird im Normalfall beim Erstellen des Levels erzeugt! Ist keine Vorhanden, wird beim einlesen automatische eine erzeugt; default = ""
+	versionNo: Integer, die die Version des Levels angibt. Sie wird beim Speichern über den Editor automatisch hochgezählt, default="0";
+	formatNo: Integer, die die aktuelle Formatnummer angibt. Wird ein Level geöffnet, der eine größere Formatnummer (als das Programm) trägt, so wird eine Warnung ausgegeben; default="0";
+		Diese Datei beschreibt das Format für formatNo=4
+	difficulty: Integer, die die Schwierigkeit des Levels angibt (default="0")
+		0: undefined
+		1: easy
+		2: medium
+		3: difficult
+-->
+<level layers="2" name="Land of Dreams" comment="This is an interesting level">
+    <!-- <layer>
+	Notwendige Attribute: width und height; Innerhalb von <layer> müssen 'height' mal <line> und darin jeweils 'width' mal <boardtile> existieren
+	Optionale Attribute:
+	    invisible: Gibt an, ob die Ebene sichtbar ist. (Die Tunnelebene sollte nicht sichtbar sein!)
+		"no" (default), "yes"
+    -->
+    <layer width="6" height="5" invisible="no">
+        <line>
+	    <!-- <boardtile>
+		Optionale Attribute
+		    type: Art des Schienenstücks: "turn", "straight", "switch", "tunnel", "none" (default), "goal", "doubleTurn", "switchTurn"
+				Eine "turn" geht ohne Drehung von links nach oben.
+				Eine "straight"/"tunnel"/"goal" geht von links nach rechts
+				Eine "switch" ist eine Überlagerung von turn und straight
+				Eine "doubleTurn" besteht aus zwei Kurven; eine von links nach oben und eine von rechts nach unten
+				Eine "switchTurn" besteht auch aus zwei Kurven, die beide links starten und nach oben und rechts gehen
+		    rotation: Gibt an, ob wie viel Grad das Schienenstück nach links gedreht wird
+			"0" (default), "90", "180" oder "270"
+		    mirror: Wurde das Schienenstück intern um die (ungedrehte) y-Achse gespiegelt?
+			"no" (default), "yes"
+		    colorTop, colorRight, colorBottom, colorLeft: Gibt die Färbung des Schienenstücks an. Sofern die Färbung auch logisch sinnvoll ist, wird
+			auch die Logik entsprechend angepasst. (Gibt es widersprüchliche Einträge, so gilt die obere Reihefolge als absteigende Prioritätsliste)
+			"black" (default), "red", "yellow", "orange", "green", "white", "blue"
+		    Typ-spezifische zusätzliche Optionen werden in eigenen Unterelementen bereitgestellt
+			Wenn das Element selber den Namen des Attributes trägt, so wird der Wert im wirklichen Attribut 'value' eingetragen
+	    -->
+	    <boardtile type="turn" rotation="90" mirror="yes" />
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	    <boardtile type="doubleTurn" rotation="90" mirror="no" />
+	    <boardtile type="switch" rotation="90" mirror="no" >
+		<!-- switchState: Gibt an, wie die evtl. schaltbare Weiche steht
+		    "straight" (default), "turn"
+		-->
+			<switchState value="turn" />
+	    </boardtile>
+	    <boardtile type="switchTurn" rotation="90" mirror="no" >
+		<!-- switchState: Gibt an, wie die evtl. schaltbare Weiche steht
+		    "turn1" (default), "turn2"
+		-->
+			<switchState value="turn1" />
+	    </boardtile>
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	</line>
+	<line>
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	    <boardtile type="tunnel" rotation="90" mirror="no">
+		<!--
+			Der Tunnel steht ohne Drehungen auf der rechten Seite der "Straight"-Schiene
+			
+		    tunnelID: gibt an, mit welchem Tunnel dieser Tunnel verbunden ist. Eine bestimmte tunnelID muss deshalb genau zweimal vergeben werden. Der Wert muss positiv sein
+			Soll der Tunnel nicht verbunden werden, so kann ein negativer Wert angegeben werden. (default="-1")
+		    <ballqueue>: Innerhalb der Ballqueue wird gesteuert, wann welcher Ball erscheint
+		-->
+		<tunnelID value="7" />
+		<ballqueue> <!-- Achtung: Zum löschen von 'ball' und 'wait' wird auch ein Zeitschritt benötigt! -->
+		    <ball color="green" /> <!-- Default für die Farbe ist rot! -->
+		    <wait time="90" /> <!-- Dies sind Zeitschritte; es steckt also keine konkrete Zeitangabe dahinter; default = "50"; Es muss ein positiver Wert oder 0 sein "=> 0" -->
+		    <ball color="red" /> 
+		</ballqueue>
+	    </boardtile>
+	    <boardtile type="goal" rotation="90" mirror="no" >
+	    <!--
+	    	Das Ziel hat (ohne Drehung) seinen Eingang links auf der "Straight"-Schiene
+	    	
+	    	continue: gibt an, ob (sobald das Zeil voll ist) das Zeil als gerade Schiene durchfahren werden kann (default: "no")
+			ballqueue: Gibt an, welcher Ball wann ins das Ziel soll
+	    -->
+	    	<continue value="yes" /> 
+	    	<ballqueue showAll="yes" > <!-- showAll gibt an, ob von Anfang an, alle Farben angezeigt werden sollen, oder ob immer nur die nächste Sichtbar sein soll! (default: "no") -->
+	    		<ball color="green" /> <!-- Default für die Farbe ist rot! -->
+		    	<ball color="red" />
+		    	<ball color="blue" /> <!-- Maximal 4 Einträge sind erlaubt! -->
+		    </ballqueue>
+	    </boardtile>
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	    <boardtile type="turn" rotation="90" mirror="no" />
+	</line>
+	<!--
+	...
+	-->
+    </layer>
+    <!-- Tunnelebene -->
+    <layer width="3" height="9" invisible="yes">
+	<!--
+	...
+	-->
+    </layer>
+</level>

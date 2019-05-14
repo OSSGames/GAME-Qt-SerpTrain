@@ -1,0 +1,7 @@
+- auf den Tunneln soll eine Zahl stehen, die angibt, wie viele Kugel dort noch starten
+	(Wäre toll, wenn die nicht mitgedreht würde)
+
+- Ich bin unzufrieden mit der Position, an der die Editordialoge erscheinen!
+
+SBoardTunnelSettingsWidget::GetBallIcon ist zwar "static public", sollte aber irgendwo anders hin!
+

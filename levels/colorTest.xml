@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<level layers="1" name="aa" comment="bb">
+	<layer width="6" height="6">
+		<line>
+			<boardtile type="turn" colorTop="green" rotation="180" mirror="no" />
+			<boardtile type="straight" colorRight="green" rotation="0" mirror="no" />
+			<boardtile type="straight" colorRight="green" rotation="0" mirror="no" />
+			<boardtile type="straight" colorRight="green" rotation="0" mirror="no" />
+			<boardtile type="straight" colorRight="green" rotation="0" mirror="no" />
+			<boardtile type="tunnel" colorRight="green" rotation="0" mirror="no" >
+		 		<tunnelID value="-1" />
+				<ballqueue>
+				    <ball color="blue" />
+				    <wait time="50" />
+				    <ball color="green" /> 
+				    <wait time="80" />
+				    <ball color="red" /> 
+				    <wait time="120" />
+				    <ball color="blue" /> 
+				</ballqueue>
+			</boardtile>
+		</line>
+		<line>
+			<boardtile type="turn" colorTop="green" rotation="270" mirror="no" />
+			<boardtile type="switch" rotation="180" mirror="yes" colorLeft="green" colorRight="red">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="red" />
+			<boardtile type="switch" rotation="180" mirror="no" colorRight="red" colorLeft="green">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="switch" rotation="180" mirror="no" colorLeft="green" colorTop="white">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="goal" rotation="0" mirror="no" >
+			    	<continue value="no" /> 
+			    	<ballqueue showAll="yes" >
+			    		<ball color="white" />
+				    	<ball color="red" />
+				    	<ball color="blue" />
+				    	<ball color="green" />
+				</ballqueue>
+			</boardtile>
+		</line>
+		<line>
+			<boardtile type="turn" colorTop="green" rotation="180" mirror="no" />
+			<boardtile type="turn" colorTop="green" rotation="0" mirror="no" />
+			<boardtile />
+			<boardtile type="turn" rotation="270" mirror="no" colorTop="green"/>
+			<boardtile type="switch" rotation="0" mirror="yes" colorTop="white" colorLeft="green">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="turn" rotation="90" mirror="no" colorTop="green"/>
+		</line>
+		<line>
+			<boardtile type="turn" rotation="270" colorTop="green" mirror="no" />
+			<boardtile type="straight" rotation="180" mirror="no" colorRight="green" />
+			<boardtile type="switch" rotation="180" mirror="yes" colorRight="blue" colorLeft="green">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="switch" rotation="180" mirror="yes" colorLeft="blue">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="switch" rotation="180" mirror="no" colorLeft="green" colorRight="blue">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="turn" rotation="0" mirror="no" colorTop="green"/>
+		</line>
+		<line>
+			<boardtile type="goal" rotation="180" mirror="no" >
+			    	<continue value="no" /> 
+			    	<ballqueue showAll="yes" >
+			    		<ball color="yellow" />
+				    	<ball color="green" />
+				    	<ball color="yellow" />
+				    	<ball color="blue" />
+				</ballqueue>
+			</boardtile>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="yellow"/>
+			<boardtile type="switch" rotation="0" mirror="no" colorTop="green" colorLeft="yellow">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="switch" rotation="0" mirror="no" colorTop="blue" colorLeft="yellow">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="switch" rotation="0" mirror="yes" colorTop="green" colorLeft="yellow">
+				<switchState value="straight" />
+			</boardtile>
+			<boardtile type="turn" rotation="90" mirror="no" colorTop="yellow" />
+		</line>
+		<line>
+			<boardtile type="tunnel" rotation="0" mirror="yes" colorRight="yellow">
+		 		<tunnelID value="-1" />
+				<ballqueue>
+				    <ball color="white" />
+				    <wait time="20" />
+				    <ball color="yellow" /> 
+				    <wait time="180" />
+				    <ball color="yellow" /> 
+				    <wait time="70" />
+				    <ball color="green" /> 
+				</ballqueue>
+			</boardtile>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="yellow"/>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="yellow"/>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="yellow"/>
+			<boardtile type="straight" rotation="0" mirror="no" colorRight="yellow" />
+			<boardtile type="turn" rotation="0" mirror="no" colorTop="yellow" />
+	</line>
+	</layer>
+</level>

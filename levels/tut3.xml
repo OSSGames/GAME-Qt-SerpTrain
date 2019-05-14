@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<level buildNumber="755" layers="1" comment="There can be more than one ball source and there can also be several goals. Generally it does not matter in which order you fill the goals, but if a goal is completely filled other balls can just pass it." name="Tutorial 3" >
+ <layer width="9" height="3" >
+  <line>
+   <boardtile rotation="0" type="tunnel" mirror="yes" >
+    <tunnelID value="-1" />
+    <ballqueue>
+      <ball color="red" />
+      <wait time="80" />
+      <ball color="yellow" />
+      <wait time="30" />
+      <ball color="red" />
+      <wait time="80" />
+      <ball color="yellow"/>
+      <wait time="90" />
+      <ball color="blue" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="90" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="tunnel" mirror="no" >
+    <tunnelID value="-1" />
+    <ballqueue>
+      <ball color="blue" />
+      <wait time="30" />
+      <ball color="green" />
+      <wait time="80" />
+      <ball color="green"/>
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="90" type="goal" mirror="no" >
+    <continue value="no" />
+    <ballqueue showAll="no" >
+      <ball color="green" />
+      <ball color="blue" />
+      <ball color="green" />
+      <ball color="blue" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="180" type="turn" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="90" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="270" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="90" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="270" type="turn" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="goal" mirror="no" >
+    <continue value="yes" />
+    <ballqueue showAll="no" >
+     <ball color="yellow" />
+      <ball color="yellow" />
+      <ball color="red" />
+      <ball color="red" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="yes" >
+    <switchState value="straight" />
+   </boardtile>
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="straight" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+   <boardtile rotation="0" type="none" mirror="no" />
+  </line>
+ 
+ </layer>
+</level>

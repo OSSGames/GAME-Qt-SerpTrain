@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<level buildNumber="1322" layers="1" contact="http://serpedon.de" difficulty="2" author="Michael &quot;Serpedon&quot; Walz" comment="" uuid="8a6993fc-4830-4380-b720-eb22dfeb0f20" name="Three Circles" formatNo="4" versionNo="2" >
+ <layer width="6" height="4" >
+  <line>
+   <boardtile rotation="0" type="tunnel" mirror="yes" >
+    <tunnelID value="-1" />
+    <ballqueue>
+     <ball color="red" />
+     <wait time="10" />
+     <ball color="blue" />
+     <wait time="10" />
+     <ball color="yellow" />
+     <wait time="10" />
+     <ball color="green" />
+     <wait time="10" />
+     <ball color="blue" />
+     <wait time="10" />
+     <ball color="white" />
+     <wait time="10" />
+     <ball color="green" />
+     <wait time="10" />
+     <ball color="yellow" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="90" type="turn" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="90" type="goal" mirror="no" >
+    <continue value="no" />
+    <ballqueue showAll="no" >
+     <ball color="blue" />
+     <ball color="yellow" />
+     <ball color="yellow" />
+     <ball color="red" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="270" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="90" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="270" type="turn" mirror="no" />
+   <boardtile rotation="90" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="270" type="straight" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="90" type="goal" mirror="no" >
+    <continue value="yes" />
+    <ballqueue showAll="no" >
+     <ball color="white" />
+     <ball color="green" />
+     <ball color="green" />
+     <ball color="blue" />
+    </ballqueue>
+   </boardtile>
+   <boardtile rotation="270" type="straight" mirror="no" />
+   <boardtile rotation="270" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="180" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="90" type="switch" mirror="yes" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="270" type="straight" mirror="no" />
+  </line>
+  <line>
+   <boardtile rotation="270" type="turn" mirror="no" />
+   <boardtile rotation="0" type="turn" mirror="no" />
+   <boardtile rotation="270" type="turn" mirror="no" />
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="switch" mirror="no" >
+    <switchState value="turn" />
+   </boardtile>
+   <boardtile rotation="0" type="turn" mirror="no" />
+  </line>
+ </layer>
+</level>

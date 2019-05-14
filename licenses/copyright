@@ -1,0 +1,35 @@
+Copyright:
+
+    © 2008, 2009  Michael \"Serpedon\" Walz (http://serpedon.de)
+
+License:
+
+    This software is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License version 2 or version 3
+    as published by the Free Software Foundation.
+
+    This software is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
+    02110-1301, USA.
+
+On Debian systems, the complete text of the GNU General Public License
+can be found in `/usr/share/common-licenses/GPL-2' and
+`/usr/share/common-licenses/GPL-3'.
+
+On Windows systems, these licenses should have been distributed along with
+the program itself.
+
+Remark:
+This copyright notice only applies to the game SerpTrain itself. 
+
+Qt:
+The current (2008) copyright-holder of the framework Qt is Nokia Corporation and/or its subsidiary(-ies). Currently Qt is also licened under GPL 2 and 3. For more details, please have a look at http://www.qtsoftware.com/products/licensing
+
+mingwm10.dll:
+On windows system the game is distributed along with the runtime-dll mingwm10.dll. This dll ist part of the MinGW runtime and is therefore public domain. Look at http://www.mingw.org/license for more details.
